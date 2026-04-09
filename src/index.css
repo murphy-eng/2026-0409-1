@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e11d48; /* Red-600 */
+  --color-secondary: #475569; /* Slate-600 */
+  --color-cold-gray: #f1f5f9; /* Slate-100 */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+.nav-link {
+  @apply text-slate-600 hover:text-primary transition-colors font-medium;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-slate-800 mb-8 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-12 after:h-1 after:bg-primary;
+}
