@@ -26,18 +26,18 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li><a href="/about" className="hover:text-primary transition-colors">關於我們</a></li>
               <li><a href="/capabilities" className="hover:text-primary transition-colors">核心能量</a></li>
+              <li><a href="/products" className="hover:text-primary transition-colors">產品中心</a></li>
               <li><a href="/services" className="hover:text-primary transition-colors">服務項目</a></li>
-              <li><a href="/insights" className="hover:text-primary transition-colors">最新資訊</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-6">服務項目</h3>
+            <h3 className="text-white font-bold mb-6">國際業務聯絡窗口</h3>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:text-primary transition-colors">分子與細胞試驗</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">藥理試驗服務</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">毒理與安全性評估</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">外泌體鑑定服務</a></li>
+              <li><span className="text-primary font-bold">北美地區：</span> usa.sales@trifecta-med.com</li>
+              <li><span className="text-primary font-bold">歐洲地區：</span> eu.sales@trifecta-med.com</li>
+              <li><span className="text-primary font-bold">亞太地區：</span> apac.sales@trifecta-med.com</li>
+              <li><span className="text-primary font-bold">大中華區：</span> cn.sales@trifecta-med.com</li>
             </ul>
           </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span>02-26984231 #169</span>
+                <span>+886 2-26984231 #169</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary shrink-0" />

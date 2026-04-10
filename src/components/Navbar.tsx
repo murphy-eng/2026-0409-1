@@ -6,6 +6,7 @@ const navItems = [
   { name: '首頁', path: '/' },
   { name: '關於我們', path: '/about' },
   { name: '核心能量', path: '/capabilities' },
+  { name: '產品中心', path: '/products' },
   { name: '服務項目', path: '/services' },
   { name: '最新資訊', path: '/insights' },
   { name: '相關連結', path: '/links' },
@@ -33,12 +34,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-semibold transition-colors ${
+                className={`text-[13px] font-semibold transition-colors ${
                   location.pathname === item.path
                     ? 'text-primary border-b-2 border-primary'
                     : 'text-slate-600 hover:text-primary'
@@ -47,9 +48,10 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <div className="flex items-center space-x-2 text-slate-400 hover:text-primary cursor-pointer border-l pl-6 ml-2">
-              <Globe size={18} />
-              <span className="text-sm font-medium">EN</span>
+            <div className="flex items-center space-x-2 border-l pl-4 ml-2">
+              <button className="text-xs font-bold text-primary hover:underline">繁中</button>
+              <span className="text-slate-300">/</span>
+              <button className="text-xs font-bold text-slate-400 hover:text-primary hover:underline">EN</button>
             </div>
           </div>
 

@@ -75,75 +75,88 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100">
-              <h3 className="text-2xl font-bold text-slate-900 mb-8">發送訊息</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-8">Send Message</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-2">姓名 *</label>
+                    <label className="block text-sm font-bold text-slate-700 mb-2">Name *</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                      placeholder="您的姓名"
+                      placeholder="Your Name"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-slate-700 mb-2">公司名稱 *</label>
+                    <label className="block text-sm font-bold text-slate-700 mb-2">Company Name *</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                      placeholder="您的公司"
+                      placeholder="Your Company"
                       required
                     />
                   </div>
                 </div>
 
-                <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">電子郵件 *</label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="email@example.com"
-                    required
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-bold text-slate-700 mb-2">Email *</label>
+                    <input
+                      type="email"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                      placeholder="email@example.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-bold text-slate-700 mb-2">Country / Region *</label>
+                    <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white" required>
+                      <option value="">Select Country</option>
+                      <option value="USA">USA</option>
+                      <option value="UK">UK</option>
+                      <option value="China">China</option>
+                      <option value="Taiwan">Taiwan</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">聯絡電話</label>
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Phone</label>
                   <input
                     type="tel"
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="02-12345678"
+                    placeholder="+886 2-12345678"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">諮詢項目 *</label>
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Inquiry Item *</label>
                   <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white">
-                    <option>請選擇諮詢項目</option>
-                    <option>分子與細胞試驗</option>
-                    <option>藥理試驗服務</option>
-                    <option>毒理與安全性評估</option>
-                    <option>外泌體鑑定服務</option>
-                    <option>其他合作諮詢</option>
+                    <option>Select Item</option>
+                    <option>CMC Development</option>
+                    <option>PK & Distribution</option>
+                    <option>Safety Assessment</option>
+                    <option>Other Collaboration</option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 mb-2">訊息內容 *</label>
+                  <label className="block text-sm font-bold text-slate-700 mb-2">Message *</label>
                   <textarea
                     rows={4}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="請輸入您的需求或問題..."
+                    placeholder="Enter your message..."
                     required
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-primary hover:bg-red-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-primary/20"
+                  className="w-full bg-primary hover:bg-[#8b0000] text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-primary/20"
                 >
-                  提交訊息
+                  Submit Message
                 </button>
               </form>
             </div>

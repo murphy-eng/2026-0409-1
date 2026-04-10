@@ -8,6 +8,8 @@ import Services from './pages/Services';
 import Insights from './pages/Insights';
 import Contact from './pages/Contact';
 import Links from './pages/Links';
+import Products from './pages/Products';
+import ProductDetail from './pages/ProductDetail';
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/capabilities" element={<Capabilities />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
             <Route path="/services" element={<Services />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/links" element={<Links />} />
